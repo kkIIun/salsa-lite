@@ -1,0 +1,11 @@
+# Config to extract SALSA-Lite or SALSA-IPD feature for TAU-NIGENS Spatial Sound Events (TNSSE) 2021 dataset
+data_dir: '/mnt/hdd1_part1/UROP22_winter/intern_6/data'
+feature_dir: '/mnt/hdd1_part1/UROP22_winter/intern_6/data/features'
+data:
+  format: 'mic'
+  fs: 16000
+  n_fft: 512
+  win_len: 512
+  hop_len: 320  # 300 for 12.5ms for n_fft = 512; 150 for n_fft = 256
+  fmin_doa: 50  # Hz
+  fmax_doa: 4000 # Hz
